@@ -12,14 +12,14 @@ export class CurtisStack {
   * The constructor for the CurtisStack string stack class.
   */
   constructor() {
-    self.stackAsList = []
+    this.stackAsList = []
   }
 
   /*
   * This method pushes a string onto the stack.
   */
   public push(input) {
-    self.stackAsList.push(input)
+    this.stackAsList.push(input)
   }
 
   /*
@@ -27,8 +27,8 @@ export class CurtisStack {
   */
   public get showStack() {
     let values = ""
-    for (let counter = 0; counter < self.stackAsList.length; counter++) {
-      values = values + self.stackAsList[counter] + ", "
+    for (let counter = 0; counter < this.stackAsList.length; counter++) {
+      values = values + this.stackAsList[counter] + ", "
     }
     values = values.substring(0, values.length-2)
     return values
@@ -39,12 +39,12 @@ export class CurtisStack {
   */
   public popItem() {
     let poppedItem = ""
-    if (self.stackAsList[0]) {
-      poppedItem = self.stackAsList[self.stackAsList.length - 1]
+    if (this.stackAsList[0]) {
+      poppedItem = this.stackAsList[this.stackAsList.length - 1]
     } else {
       poppedItem = "nothing to remove"
     }
-    self.stackAsList.splice(-1)
+    this.stackAsList.splice(-1)
     return poppedItem
   }
 }
