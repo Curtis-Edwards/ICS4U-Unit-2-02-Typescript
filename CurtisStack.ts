@@ -18,7 +18,7 @@ export class CurtisStack {
   /*
   * This method pushes a string onto the stack.
   */
-  public push(input) {
+  public get push(input) {
     self.stackAsList.push(input)
   }
 
@@ -37,7 +37,7 @@ export class CurtisStack {
   /*
   * This method pops a string from the stack.
   */
-  public popItem() {
+  public get popItem() {
     let poppedItem = ""
     if (self.stackAsList[0]) {
       poppedItem = self.stackAsList[self.stackAsList.length - 1]
