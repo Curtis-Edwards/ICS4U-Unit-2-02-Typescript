@@ -16,13 +16,6 @@ export class CurtisStack {
   }
 
   /*
-  * This method pushes a string onto the stack.
-  */
-  /*public push(input) {
-    this.stackAsList.push(input)
-  }*/
-
-  /*
   * This method returns the stack as a string.
   */
   public get showStack() {
@@ -32,6 +25,13 @@ export class CurtisStack {
     }
     values = values.substring(0, values.length-2)
     return values
+  }
+
+  /*
+  * This method pushes a string onto the stack.
+  */
+  public push(input) {
+    this.stackAsList.push(input)
   }
 
   /*
