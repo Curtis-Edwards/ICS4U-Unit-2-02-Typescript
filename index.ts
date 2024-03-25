@@ -12,6 +12,8 @@ fruits.push("apple")
 fruits.push("banana")
 fruits.push("cherry")
 console.log("fruits: " + fruits.showStack())
+console.log("popped: " + colours.pop())
+console.log("colours: " + colours.show)
 
 let colours = new CurtisStack()
 colours.push("red")
