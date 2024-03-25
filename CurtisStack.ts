@@ -25,7 +25,7 @@ export class CurtisStack {
   /*
   * This method returns the stack as a string.
   */
-  public get showStack() {
+  public showStack() {
     let values = ""
     for (let counter = 0; counter < self.stackAsList.length; counter++) {
       values = values + self.stackAsList[counter] + ", "
