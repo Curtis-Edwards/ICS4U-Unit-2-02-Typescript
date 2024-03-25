@@ -37,7 +37,7 @@ export class CurtisStack {
   /*
   * This method pops a string from the stack.
   */
-  public pop() {
+  public popItem() {
     let popedItem = ""
     if (self.stackAsList[0]) {
       popedItem = self.stackAsList[self.stackAsList.length - 1]
