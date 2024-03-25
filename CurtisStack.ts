@@ -38,13 +38,13 @@ export class CurtisStack {
   * This method pops a string from the stack.
   */
   public popItem() {
-    let popedItem = ""
+    let poppedItem = ""
     if (self.stackAsList[0]) {
-      popedItem = self.stackAsList[self.stackAsList.length - 1]
+      poppedItem = self.stackAsList[self.stackAsList.length - 1]
     } else {
-      popedItem = "nothing to remove"
+      poppedItem = "nothing to remove"
     }
     self.stackAsList.splice(-1)
-    return popedItem
+    return poppedItem
   }
 }
