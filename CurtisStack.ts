@@ -25,7 +25,7 @@ export class CurtisStack {
   /*
   * This method returns the stack as a string.
   */
-  public get showStack() {
+  public showStack() {
     let values = ""
     for (let counter = 0; counter < self.stackAsList.length; counter++) {
       values = values + self.stackAsList[counter] + ", "
@@ -37,7 +37,7 @@ export class CurtisStack {
   /*
   * This method pops a string from the stack.
   */
-  public popItem() {
+  /*public popItem() {
     let poppedItem = ""
     if (self.stackAsList[0]) {
       poppedItem = self.stackAsList[self.stackAsList.length - 1]
@@ -46,5 +46,5 @@ export class CurtisStack {
     }
     self.stackAsList.splice(-1)
     return poppedItem
-  }
+  }*/
 }
