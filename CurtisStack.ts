@@ -18,7 +18,7 @@ export class CurtisStack {
   /*
   * This method pushes a string onto the stack.
   */
-  public push(input) {
+  public pushStack(input) {
     self.stackAsList.push(input)
   }
 
